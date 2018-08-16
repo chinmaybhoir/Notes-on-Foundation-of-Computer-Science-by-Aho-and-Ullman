@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>FCS CHAPTER I</title>
+<!-- 2018-08-16 Thu 13:09 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Chinmay.Bhoir" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">FCS CHAPTER I</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Data Models</a>
+<ul>
+<li><a href="#sec-1-1">1.1. Two aspects of data model</a></li>
+<li><a href="#sec-1-2">1.2. 'Data model' and 'data structure' are different</a></li>
+<li><a href="#sec-1-3">1.3. Data models in programming</a></li>
+<li><a href="#sec-1-4">1.4. Exercise</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. The C Data Model</a>
+<ul>
+<li><a href="#sec-2-1">2.1. The C Type System</a></li>
+<li><a href="#sec-2-2">2.2. Exercise</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. Algorithms and the Design of Programs</a>
+<ul>
+<li><a href="#sec-3-1">3.1. Software development process</a></li>
+<li><a href="#sec-3-2">3.2. Programming style</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+Notes on chapter 1 of "Foundations of Computer Science" by Alfred Aho and Jeffrey Ullman
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Data Models</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Two aspects of data model</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>Value that an object can consume. This is usually the static part, also called as 'Type system'
+</li>
+<li>Operations on data. This is usually the dynamic part.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 'Data model' and 'data structure' are different</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Data model is an abstraction, while data structure is an implementation
+</li>
+<li>For example, 'list' is an abstraction (data model), while 'linked list' is an implementation (data structure).
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Data models in programming</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>The basic principle under which most programming languages deal with data is that each program has access to "boxes", which we can think of as regions of storage. Each box has a type, such as int or char. 
+</li>
+<li>We may store in a box any value of the correct type for that box. 
+</li>
+<li>We often refer to the values that can be stored in boxes as data objects
+</li>
+<li>In C, a list of integers can be represented by a data structure called a linked list in which list elements are stored in cells. 
+</li>
+<li>Lists and their cells can be defined by a type declaration such as
+</li>
+</ul>
+<pre class="example">
+typedef struct CELL *LIST;
+struct CELL {
+    int element;
+    LIST next;;
+}
+</pre>
+
+<ul class="org-ul">
+<li>This declaration defines a self-referential structure CELL with two fields. The first is element, which holds the value of an element of the list and is of type int.
+</li>
+<li>The second field of each CELL is next, which holds a pointer to a cell. 
+</li>
+<li>Note that the type LIST is really a pointer to a CELL. Thus, structures of type CELL can be linked together by their next fields to form what we usually think of as a linked list
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Exercise</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>Describe data model of your favourite text editor
+</li>
+<li>Describe data model of spreadsheet program
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> The C Data Model</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> The C Type System</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Static part of C data model, describes the types of values that data can have.
+</li>
+<li>Basic types in C:
+<ul class="org-ul">
+<li>Characters (char, signed char, unsigned char)
+</li>
+<li>Integers (int, short int, long int, unsigned)
+</li>
+<li>Floating-point numbers (float, double, long double)
+</li>
+<li>Enumerations (enum)
+</li>
+</ul>
+</li>
+<li>Type formation rules in C:
+<ul class="org-ul">
+<li><i>Array Types</i> : Array whose elements are type T is denoted by 
+</li>
+</ul>
+</li>
+</ul>
+\begin{align*}
+T &  A[n]
+\end{align*}
+<ul class="org-ul">
+<li><i>Structure Types</i> : Structure is a grouping of variables called <i>members</i> or <i>fields</i>. 
+</li>
+</ul>
+<pre class="example">
+struct S {
+    T1 M1 ;
+    T2 M2 ;
+    ···
+    Tn Mn ;
+}
+</pre>
+<ul class="org-ul">
+<li><i>Union Types</i> : A union type allows a variable to have different types at different times during the execution of a program. 
+</li>
+</ul>
+<p>
+The declaration
+</p>
+<pre class="example">
+union {
+    T1 M1 ;
+    T2 M2 ;
+    ···
+    Tn Mn ;
+} x;
+</pre>
+<p>
+defines a variable x that can hold a value of any of the types T1 , T2 , . . . , Tn .
+</p>
+
+<ul class="org-ul">
+<li><i>Pointer Types</i> : A variable of type pointer contains the address of a region of storage. Following is the declaration of variable p to be a pointer to a variable of type T.
+</li>
+</ul>
+\begin{align*}
+T & *p;
+\end{align*}
+</div>
+</div>
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Exercise</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>Give an example of a C data object that has more than one name.
+</li>
+<li>If you are familiar with another programming language besides C, describe its type system and operations.
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Algorithms and the Design of Programs</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Data models, their properties, and their appropriate usage is one pillar of computer science. Other, equally important, pillar is algorithms and and their associated data structures.
+</p>
+</div>
+
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Software development process</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>Problem definition and specification
+</li>
+<li>Design
+</li>
+<li>Implementation
+</li>
+<li>Integration and system testing
+</li>
+<li>Installation and field testing
+</li>
+<li>Maintenance
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Programming style</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>Modularize the program into coherent pieces
+</li>
+<li>Lay out the program so that its structure is clear
+</li>
+<li>Write intelligent comments to explain the program. Describe the data models, data structures used to represent them, and operations performed.
+</li>
+<li>Use meaningful names for procedures and variables
+</li>
+<li>Avoid explicit constants whenever possible.
+</li>
+<li>Avoid using global variables
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Chinmay.Bhoir</p>
+<p class="date">Created: 2018-08-16 Thu 13:09</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
