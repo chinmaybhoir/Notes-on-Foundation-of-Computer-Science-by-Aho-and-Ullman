@@ -1,0 +1,165 @@
+% Created 2018-08-16 Thu 13:11
+\documentclass[11pt]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\author{Chinmay.Bhoir}
+\date{\today}
+\title{FCS CHAPTER I NOTES}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.5.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+Notes on chapter 1 of "Foundations of Computer Science" by Alfred Aho and Jeffrey Ullman
+
+\section{Data Models}
+\label{sec-1}
+\subsection{Two aspects of data model}
+\label{sec-1-1}
+\begin{itemize}
+\item Value that an object can consume. This is usually the static part, also called as 'Type system'
+\item Operations on data. This is usually the dynamic part.
+\end{itemize}
+
+\subsection{'Data model' and 'data structure' are different}
+\label{sec-1-2}
+\begin{itemize}
+\item Data model is an abstraction, while data structure is an implementation
+\item For example, 'list' is an abstraction (data model), while 'linked list' is an implementation (data structure).
+\end{itemize}
+
+\subsection{Data models in programming}
+\label{sec-1-3}
+\begin{itemize}
+\item The basic principle under which most programming languages deal with data is that each program has access to "boxes", which we can think of as regions of storage. Each box has a type, such as int or char.
+\item We may store in a box any value of the correct type for that box.
+\item We often refer to the values that can be stored in boxes as data objects
+\item In C, a list of integers can be represented by a data structure called a linked list in which list elements are stored in cells.
+\item Lists and their cells can be defined by a type declaration such as
+\end{itemize}
+\begin{verbatim}
+typedef struct CELL *LIST;
+struct CELL {
+    int element;
+    LIST next;;
+}
+\end{verbatim}
+
+\begin{itemize}
+\item This declaration defines a self-referential structure CELL with two fields. The first is element, which holds the value of an element of the list and is of type int.
+\item The second field of each CELL is next, which holds a pointer to a cell.
+\item Note that the type LIST is really a pointer to a CELL. Thus, structures of type CELL can be linked together by their next fields to form what we usually think of as a linked list
+\end{itemize}
+
+\subsection{Exercise}
+\label{sec-1-4}
+\begin{itemize}
+\item Describe data model of your favourite text editor
+\item Describe data model of spreadsheet program
+\end{itemize}
+
+\section{The C Data Model}
+\label{sec-2}
+\subsection{The C Type System}
+\label{sec-2-1}
+\begin{itemize}
+\item Static part of C data model, describes the types of values that data can have.
+\item Basic types in C:
+\begin{itemize}
+\item Characters (char, signed char, unsigned char)
+\item Integers (int, short int, long int, unsigned)
+\item Floating-point numbers (float, double, long double)
+\item Enumerations (enum)
+\end{itemize}
+\item Type formation rules in C:
+\begin{itemize}
+\item \emph{Array Types} : Array whose elements are type T is denoted by
+\end{itemize}
+\end{itemize}
+\begin{align*}
+T &  A[n]
+\end{align*}
+\begin{itemize}
+\item \emph{Structure Types} : Structure is a grouping of variables called \emph{members} or \emph{fields}.
+\end{itemize}
+\begin{verbatim}
+struct S {
+    T1 M1 ;
+    T2 M2 ;
+    ···
+    Tn Mn ;
+}
+\end{verbatim}
+\begin{itemize}
+\item \emph{Union Types} : A union type allows a variable to have different types at different times during the execution of a program.
+\end{itemize}
+The declaration
+\begin{verbatim}
+union {
+    T1 M1 ;
+    T2 M2 ;
+    ···
+    Tn Mn ;
+} x;
+\end{verbatim}
+defines a variable x that can hold a value of any of the types T1 , T2 , . . . , Tn .
+
+\begin{itemize}
+\item \emph{Pointer Types} : A variable of type pointer contains the address of a region of storage. Following is the declaration of variable p to be a pointer to a variable of type T.
+\end{itemize}
+\begin{align*}
+T & *p;
+\end{align*}
+\subsection{Exercise}
+\label{sec-2-2}
+\begin{itemize}
+\item Give an example of a C data object that has more than one name.
+\item If you are familiar with another programming language besides C, describe its type system and operations.
+\end{itemize}
+
+\section{Algorithms and the Design of Programs}
+\label{sec-3}
+
+Data models, their properties, and their appropriate usage is one pillar of computer science. Other, equally important, pillar is algorithms and and their associated data structures.
+
+\subsection{Software development process}
+\label{sec-3-1}
+\begin{itemize}
+\item Problem definition and specification
+\item Design
+\item Implementation
+\item Integration and system testing
+\item Installation and field testing
+\item Maintenance
+\end{itemize}
+
+\subsection{Programming style}
+\label{sec-3-2}
+\begin{itemize}
+\item Modularize the program into coherent pieces
+\item Lay out the program so that its structure is clear
+\item Write intelligent comments to explain the program. Describe the data models, data structures used to represent them, and operations performed.
+\item Use meaningful names for procedures and variables
+\item Avoid explicit constants whenever possible.
+\item Avoid using global variables
+\end{itemize}
+% Emacs 24.5.1 (Org mode 8.2.10)
+\end{document}

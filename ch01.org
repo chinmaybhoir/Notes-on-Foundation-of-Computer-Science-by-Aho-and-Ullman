@@ -1,4 +1,4 @@
-#+TITLE: FCS CHAPTER I
+#+TITLE: FCS CHAPTER I NOTES
 Notes on chapter 1 of "Foundations of Computer Science" by Alfred Aho and Jeffrey Ullman
 
 ** Data Models
