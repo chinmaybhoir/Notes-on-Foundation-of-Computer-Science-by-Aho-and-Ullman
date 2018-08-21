@@ -20,7 +20,7 @@ To do so, we proceed as follows:
 
 In other words (or symbols, if you will)
 - If we have a list of n elements A, find smallest element in A[0 ... n-1]
-- Replace A[0] with the smallest element we just found
+- Replace A[ 0 ] with the smallest element we just found
 - Now find the smallest element in list A[1 ... n-1], which is considered as 'unsorted list' and repeat the procedure
 
 Following is the C function that performs selection sort
